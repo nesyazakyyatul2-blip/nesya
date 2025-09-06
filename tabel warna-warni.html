@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Elemen Selector</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js">
+
+        </script>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            
+            body {
+                background-color: grey;
+                font-family: sans-serif;
+            }
+            #main-container {
+                width: 80%;
+                background-color: white;
+                padding: 15px;
+                margin: auto;
+            }
+            #main-container h2 {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            #table-container {
+                width: 80%;
+                margin: auto;
+            }
+            
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-bottom: 20px;
+            }
+            
+            td,
+            th {
+                border: 1px solid black;
+                padding: 5px;
+            }
+            
+            table td:first-child {
+                text-align: center;
+            }
+            table td:last-child {
+                text-align: right;
+            }
+            
+            button {
+                padding: 5px;
+            }
+
+        </style>
+    </head>
+    
+    <body>
+        <div id="main-container">
+            <h2>List Stok Barang</h2>
+            <div id="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th> </th>
+                            <th colspan="2">Stok awal</th>
+                            <th colspan="2">penjualan</th>
+                            <th colspan="2">Barang masuk</th>
+                        </tr>
+                        <tr>
+                            <th>Harga jual</th>
+                            <th>Jumlah</th>
+                            <th>Nilai</th>
+                            <th>Jumlah</th>
+                            <th>Nilai</th>
+                            <th>Jumlah</th>
+                            <th>Nilai</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>25.000</td>
+                            <td>20</td>
+                            <td>400.000</td>
+                            <td>7</td>
+                            <td>175.000</td>
+                            <td>30</td>
+                            <td>600.000</td>
+                        </tr>
+                        <tr>
+                            <tr>
+                            <td>40.000</td>
+                            <td>20</td>
+                            <td>600.000</td>
+                            <td>11</td>
+                            <td>440.000</td>
+                            <td>30</td>
+                            <td>900.000</td>
+                        </tr>
+                        <tr>
+                            <td>20.000</td>
+                            <td>20</td>
+                            <td>300.000</td>
+                            <td>12</td>
+                            <td>240.000</td>
+                            <td>30</td>
+                            <td>450.000</td>
+                        </tr>
+                         <tr>
+                            <td>10.000</td>
+                            <td>20</td>
+                            <td>100.000</td>
+                            <td>4</td>
+                            <td>40.000</td>
+                            <td>30</td>
+                            <td>150.000</td>
+                        </tr>
+                         <tr>
+                            <td>40.000</td>
+                            <td>20</td>
+                            <td>2.000.000</td>
+                            <td>6</td>
+                            <td>240.000</td>
+                            <td>30</td>
+                            <td>600.000</td>
+                        </tr>
+                         <tr>
+                            <td>130.000</td>
+                            <td>20</td>
+                            <td>2.000.000</td>
+                            <td>17</td>
+                            <td>2.210.000</td>
+                            <td>30</td>
+                            <td>3.000.000</td>
+                        </tr>
+                         <tr>
+                            <td>150.000</td>
+                            <td>20</td>
+                            <td>2.000.000</td>
+                            <td>2</td>
+                            <td>300.000</td>
+                            <td>30</td>
+                            <td>3.000.000</td>
+                        </tr>
+                         <tr>
+                            <td>250.000</td>
+                            <td>20</td>
+                            <td>4.000.000</td>
+                            <td>1</td>
+                            <td>250.000</td>
+                            <td>30</td>
+                            <td>6.000.000</td>
+                        </tr>
+                         <tr>
+                            <td>10.000</td>
+                            <td>20</td>
+                            <td>100.000</td>
+                            <td>5</td>
+                            <td>50.000</td>
+                            <td>30</td>
+                            <td>150.000</td>
+                        </tr>
+                         <tr>
+                            <td>75.000</td>
+                            <td>20</td>
+                            <td>1.400.000</td>
+                            <td>15</td>
+                            <td>1.125.000</td>
+                            <td>30</td>
+                            <td>2.100.000</td>
+                        </tr>
+                         <tr>
+                            <td>25.000</td>
+                            <td>20</td>
+                            <td>400.000</td>
+                            <td>13</td>
+                            <td>325.000</td>
+                            <td>30</td>
+                            <td>600.000</td>
+                        </tr>
+                         <tr>
+                            <td>40.000</td>
+                            <td>20</td>
+                            <td>700.000</td>
+                            <td>17</td>
+                            <td>680.000</td>
+                            <td>30</td>
+                            <td>1.050.000</td>
+                        </tr>
+                         <tr>
+                            <td>50.000</td>
+                            <td>20</td>
+                            <td>800.000</td>
+                            <td>6</td>
+                            <td>300.000</td>
+                            <td>30</td>
+                            <td>1.200.000</td>
+                        </tr>
+                         <tr>
+                            <td>30.000</td>
+                            <td>20</td>
+                            <td>300.000</td>
+                            <td>11</td>
+                            <td>330.000</td>
+                            <td>30</td>
+                            <td>450.000</td>
+                        </tr>
+                         <tr>
+                            <td>35.000</td>
+                            <td>20</td>
+                            <td>600.000</td>
+                            <td>10</td>
+                            <td>350.000</td>
+                            <td>30</td>
+                            <td>900.000</td>
+                        </tr>
+                         <tr>
+                            <td> </td>
+                            <td>300</td>
+                            <td>600.000</td>
+                            <td>10</td>
+                            <td>350.000</td>
+                            <td>30</td>
+                            <td>900.000</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Water Bladder</td>
+                            <td>5</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button>Change to Colorfull</button>
+            </div>
+        </div>
+        <script>
+        $(document).ready(function () {
+            colorLess();
+            
+            $("button").click(function () {
+                var textButton = $("button").text();
+                if (textButton == "Change to Colorfull") {
+                    $(this).text("Change to Colorless");
+                    colorFull();
+                } else {
+                    $(this).text("Change to Colorfull");
+                    colorLess();
+                }
+            });
+            
+            function colorLess() {
+                $("thead").css("background", "black");
+                $("thead").css("color", "white");
+                $("tbody tr:even").css("background", "#CCCCCC");
+                $("tbody tr:even").css("color", "black");
+                $("tbody tr:nth-child(2)").css("background", "white");
+                $("tbody tr:nth-child(2)").css("color", "black");
+                $("button").css("background", "#CCCCCC");
+                $("button").css("color", "black");
+            }
+            
+            function colorFull() {
+                $("thead").css("background", "#FFC0CB");
+                $("thead").css("color", "black");
+                $("tbody tr:even").css("background", "#E6E6FA");
+                $("tbody tr:even").css("color", "black");
+                $("tbody tr:nth-child(2)").css("background", "yellow");
+                $("tbody tr:nth-child(2)").css("color", "black");
+                $("button").css("background", "purple");
+                $("button").css("color", "white");
+            }
+            });
+            </script>
+    </body>
+ </html>
